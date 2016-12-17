@@ -1,0 +1,46 @@
+{
+   "EnvInfo":{
+	  "Name": "UATDEV"
+   },
+   "Tags":{
+	  "Name": "uatdev",
+      "Env": "project-uatdev"
+   },
+   "CIDRInfo": {
+      "all": "0.0.0.0/0",
+      "cidr": "10.112.0.0/20",
+      "NatHA": "No"
+   },
+   "PublicSubnetsData": [
+      {
+         "CidrBlock": "10.112.1.0/24",
+         "Name": "uatdev-pub-west-2b",
+         "AvailabilityZone": "us-west-2b",
+         "MapPublicIpOnLaunch": "true",
+         "Network": "Public"
+      },
+      {
+         "CidrBlock": "10.112.3.0/24",
+         "Name": "uatdev-pub-west-2c",
+         "AvailabilityZone": "us-west-2c",
+         "MapPublicIpOnLaunch": "true",
+         "Network": "Public"
+      }
+   ],
+   "PrivateSubnetsData": [
+      {
+         "CidrBlock": "10.112.0.0/24",
+         "Name": "uatdev-priv-west-2b",
+         "AvailabilityZone": "us-west-2b",
+         "MapPublicIpOnLaunch": "false",
+         "Network": "Private"
+      },
+      {
+         "CidrBlock": "10.112.2.0/24",
+         "Name": "uatdev-priv-west-2c",
+         "AvailabilityZone": "us-west-2c",
+         "MapPublicIpOnLaunch": "false",
+         "Network": "Private"
+      }
+   ]
+}

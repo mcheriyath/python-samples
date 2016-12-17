@@ -1,0 +1,60 @@
+{
+   "EnvInfo":{
+      "Name": "PROD"
+   },
+   "Tags":{
+	  "Name": "Production",
+	  "Env": "project-prod"
+   },
+   "CIDRInfo": {
+      "all": "0.0.0.0/0",
+      "cidr": "10.111.0.0/20",
+      "NatHA": "Yes"
+   },
+   "PublicSubnetsData": [
+      {
+         "CidrBlock": "10.111.1.0/24",
+         "Name": "prod-pub-west-2a",
+         "AvailabilityZone": "us-west-2a",
+         "MapPublicIpOnLaunch": "true",
+         "Network": "Public"
+      },
+      {
+         "CidrBlock": "10.111.3.0/24",
+         "Name": "prod-pub-west-2b",
+         "AvailabilityZone": "us-west-2b",
+         "MapPublicIpOnLaunch": "true",
+         "Network": "Public"
+      },
+      {
+         "CidrBlock": "10.111.5.0/24",
+         "Name": "prod-pub-west-2c",
+         "AvailabilityZone": "us-west-2c",
+         "MapPublicIpOnLaunch": "true",
+         "Network": "Public"
+      }
+   ],
+   "PrivateSubnetsData": [
+      {
+         "CidrBlock": "10.111.0.0/24",
+         "Name": "prod-priv-west-2a",
+         "AvailabilityZone": "us-west-2a",
+         "MapPublicIpOnLaunch": "false",
+         "Network": "Private"
+      },
+      {
+         "CidrBlock": "10.111.2.0/24",
+         "Name": "prod-priv-west-2b",
+         "AvailabilityZone": "us-west-2b",
+         "MapPublicIpOnLaunch": "false",
+         "Network": "Private"
+      },
+      {
+         "CidrBlock": "10.111.4.0/24",
+         "Name": "prod-priv-west-2c",
+         "AvailabilityZone": "us-west-2c",
+         "MapPublicIpOnLaunch": "false",
+         "Network": "Private"
+      }
+   ]
+}
