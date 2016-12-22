@@ -24,3 +24,10 @@ print data['EnvInfo']['Name']
 
 for i in data['PublicSubnetsData']:
     print i['Name']
+
+#Alternate Method
+#securitygroup =  jsondata['securitygroups']
+#print securitygroup
+#for key, value in securitygroup.iteritems():
+#    for k,v in value.iteritems():
+#        print v
